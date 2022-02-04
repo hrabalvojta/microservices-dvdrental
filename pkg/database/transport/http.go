@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"os"
 
-	"watermarksvc/internal/util"
-	"watermarksvc/pkg/database/endpoints"
+	"github.com/hrabalvojta/microservices-dvdrental/internal/util"
+	"github.com/hrabalvojta/microservices-dvdrental/pkg/database/endpoints"
 
 	"github.com/go-kit/kit/log"
 	httptransport "github.com/go-kit/kit/transport/http"

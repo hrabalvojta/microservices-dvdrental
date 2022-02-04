@@ -3,7 +3,7 @@ package database
 import (
 	"context"
 
-	"github.com/hrabalvojtech/microservices-dvdrental/internal"
+	"github.com/hrabalvojta/microservices-dvdrental/internal"
 )
 
 type Service interface {

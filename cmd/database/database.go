@@ -9,10 +9,10 @@ import (
 	"syscall"
 
 	"github.com/go-kit/kit/log"
-	"github.com/hrabalvojtech/watermark-service/internal/database"
-	dbsvc "github.com/hrabalvojtech/watermark-service/pkg/database"
-	"github.com/hrabalvojtech/watermark-service/pkg/database/endpoints"
-	"github.com/hrabalvojtech/watermark-service/pkg/database/transport"
+	"github.com/hrabalvojta/microservices-dvdrental/internal/database"
+	dbsvc "github.com/hrabalvojta/microservices-dvdrental/pkg/database"
+	"github.com/hrabalvojta/microservices-dvdrental/pkg/database/endpoints"
+	"github.com/hrabalvojta/microservices-dvdrental/pkg/database/transport"
 )
 
 const (
@@ -65,6 +65,7 @@ func main() {
 	)
 
 	var g group.Group
+
 	{
 		// The HTTP listener mounts the Go kit HTTP handler we created.
 		httpListener, err := net.Listen("tcp", httpAddr)

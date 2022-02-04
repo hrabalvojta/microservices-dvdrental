@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"watermarksvc/internal"
+	"github.com/hrabalvojta/microservices-dvdrental/internal"
 )
 
 type dbService struct{}

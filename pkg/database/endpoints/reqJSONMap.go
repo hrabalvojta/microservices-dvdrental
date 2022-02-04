@@ -1,6 +1,6 @@
 package endpoints
 
-import "watermarksvc/internal"
+import "github.com/hrabalvojta/microservices-dvdrental/internal"
 
 type GetRequest struct {
 	Filters []internal.Filter `json:"filters,omitempty"`

@@ -1,4 +1,4 @@
-module github.com/hrabalvojtech/microservices-dvdrental
+module github.com/hrabalvojta/microservices-dvdrental
 
 go 1.17
 
