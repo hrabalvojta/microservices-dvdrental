@@ -13,6 +13,7 @@ import (
 	dbsvc "github.com/hrabalvojta/microservices-dvdrental/pkg/database"
 	"github.com/hrabalvojta/microservices-dvdrental/pkg/database/endpoints"
 	"github.com/hrabalvojta/microservices-dvdrental/pkg/database/transport"
+	"github.com/oklog/run"
 )
 
 const (
@@ -64,7 +65,7 @@ func main() {
 		httpHandler = transport.NewHTTPHandler(eps)
 	)
 
-	var g group.Group
+	var g run.Group
 
 	{
 		// The HTTP listener mounts the Go kit HTTP handler we created.
